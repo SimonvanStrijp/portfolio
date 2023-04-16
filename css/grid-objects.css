@@ -1,0 +1,99 @@
+.prj-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  padding: 0;
+  z-index: 10;
+}
+
+.prj-active > .prj-button {
+  width: fit-content;
+  height: 100px;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  margin: 50px;
+}
+
+.prj {
+  position: relative;
+  float: left;
+  width: 33.33%;
+  height: 20vw;
+  /* background-color: red; */
+  /* border: solid 5px aqua; */
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.prj-horizontal {
+  width: 66.66%;
+  height: 20vw;
+}
+
+.prj-vertical {
+  width: 33.33%;
+  height: 40vw;
+}
+
+.prj-active {
+  width: 100vw;
+  height: fit-content;
+  min-height: 100vh;
+}
+
+.prj-container-header {
+  height: 100%;
+}
+
+.prj-header {
+  height: 100%;
+  text-align: center;
+  padding: 2vw;
+}
+
+.prj-active > .prj-container-header {
+  height: fit-content;
+
+  display: block;
+  margin: 0 auto;
+  /* width: 75vw; */
+}
+
+.prj-active > .prj-container-body {
+  height: fit-content;
+
+  display: block;
+  margin: 0 auto;
+  width: 75vw;
+}
+
+.header-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+  background-size: cover;
+  background-position: center;
+}
+
+.prj:hover .header-img {
+  filter: grayscale(0%);
+  scale: 1.1;
+}
+
+/* hero images */
+#HeroprojectHero-1 {
+  background-image: url(../img/jazz/hero.png);
+}
