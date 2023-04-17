@@ -39,8 +39,12 @@ console.log("hoi");
             $(".prj-inactive").each(function() {
                 $(this).hide(300); });
             $(this).parent().addClass('prj-active');
-            $('.prj-active > .prj-container-body').load(target);
+            $('.prj-active > .prj-container-body').load(target, function() {
+                $(this).show(300);
+                // $('html, body').animate({scrollTop: $('#projects')}, 2000);
+            });
             $('.prj-header').each().removeClass('.prj-header-inactive');
+            
         }
         });
 

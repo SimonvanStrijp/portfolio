@@ -11,13 +11,15 @@
   transition: all 0.5s ease;
   padding: 0;
   z-index: 10;
+  font-weight: bold;
 }
 
 .prj-active > .prj-button {
+  position: fixed;
   width: fit-content;
   height: 100px;
   padding: 25px;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: var(--main);
   color: rgba(255, 255, 255, 1);
   margin: 50px;
 }
@@ -57,22 +59,21 @@
   height: 100%;
   text-align: center;
   padding: 2vw;
+  /* text-shadow: 3px 3px var(--high); */
+  color: black;
 }
 
 .prj-active > .prj-container-header {
-  height: fit-content;
-
+  height: 500px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 150px auto;
   /* width: 75vw; */
 }
 
 .prj-active > .prj-container-body {
   height: fit-content;
-
   display: block;
   margin: 0 auto;
-  width: 75vw;
 }
 
 .header-img {
@@ -93,7 +94,7 @@
   scale: 1.1;
 }
 
-/* hero images */
-#HeroprojectHero-1 {
-  background-image: url(../img/jazz/hero.png);
+.prj-active .header-img {
+  filter: grayscale(0%);
+  scale: 1.1;
 }
