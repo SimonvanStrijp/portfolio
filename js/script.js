@@ -23,7 +23,7 @@ console.log("hoi");
 
     
     // load CV
-    $('#cv-container').load('cv.html');
+    // $('#cv-container').load('cv.html');
 
     
     
@@ -118,4 +118,5 @@ console.log("hoi");
 
     
     
+
     
