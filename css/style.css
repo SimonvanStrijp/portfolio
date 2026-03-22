@@ -4,16 +4,18 @@
 
 :root {
   /* --main: #02736f; */
-  --main: #025754;
+  --main: #0c5678;
   /* --dark: #013331; */
   --dark: #1c2928;
   /* --high: #db4d00; */
   --high: #ff8700;
+
+  --light: #e9ecef;
 }
 
 body {
   font-family: "Poppins";
-  font-size: 2rem;
+  font-size: 1rem;
   /* overflow-y: hidden; */
   overflow-x: hidden;
   color: black;
@@ -24,21 +26,32 @@ body {
   display: grid;
   grid-template-columns: 3fr 1.5fr;
   /* margin-bottom: 100px; */
-  column-gap: 50px;
+  column-gap: 1vw;
 }
 
 .grid-50 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   /* margin-bottom: 100px; */
-  column-gap: 50px;
+  column-gap: 1vw;
 }
 
 .grid-40 {
   display: grid;
   grid-template-columns: 1.5fr 3fr;
   /* margin-bottom: 100px; */
-  column-gap: 50px;
+  column-gap: 1vw;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1vw;
+}
+.grid-5col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 1vw;
 }
 
 .color-block {
@@ -53,14 +66,14 @@ header img {
 }
 
 header p {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 50px 50px 0px 0px;
   line-height: 130%;
 }
 
 .main-header {
-  padding: 50px 10vw;
+  padding: 50px 15vw;
 }
 
 .color-block {
@@ -112,22 +125,22 @@ video {
 
 iframe {
   width: 100%;
-  min-height: 50%;
+  height: 100%;
 }
 
 .sketchfab-embed-wrapper {
   width: 100%;
-  height: auto;
+  height: 80vh;
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 130%;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 15px;
   font-weight: bold;
   /* text-decoration: underline 5px; */
@@ -150,19 +163,20 @@ h2 {
 }
 
 h3 {
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   line-height: 130%;
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.4rem;
   line-height: 130%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  word-wrap: initial;
 }
 a {
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 130%;
   margin-bottom: 1rem;
   transition: all 0.2s ease;
@@ -175,11 +189,11 @@ a:visited {
 }
 
 a:active {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }
 
 a:hover {
-  font-size: 2.1rem;
+  font-size: 1.7rem;
 }
 
 .main-link {
